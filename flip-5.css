@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Play&display=swap'); /* for navbar */
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Play&display=swap');  /* for features */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&display=swap'); /* for verify */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: sans-serif; */
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: rgb(173, 217, 210);
+}
+
+nav {
+    width: 100%;
+    position: sticky;
+    margin: auto auto;
+    padding: auto auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    /* border: 2px solid black; */
+    /* background: rgb(173, 217, 210); */
+    font-size: 1.2rem;
+}
+
+.logo {
+    flex-basis: 20%;
+    margin: .7rem 2rem;
+}
+
+.logo img {
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 3rem;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul{
+    margin-right: 2rem;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1.2rem;
+    /* border: 2px solid red; */
+    font-size: larger;
+    font-weight: 400;
+    padding: 0px .5rem;
+    /* color: black; */
+    /* background-color: ; */
+}
+
+.nav-links ul li:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    /* border-top-right-radius: 21px; */
+    border-bottom-right-radius: 21px;
+    border-top-left-radius: 21px;
+    /* border-bottom-left-radius: 21px; */
+    transition: .3s;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links ul li a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* .nav-links ul li input {
+    padding: 4.5px 9px;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.nav-links ul li button {
+    padding: 4.5px 9px;
+    border: 2px solid white;
+    border-radius: 6px;
+} */
+
+.information {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+.information>img {
+    width: 320px;
+    height: 460px;
+}
+
+#circle {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    /* background: #ccc; */
+    transform: rotate(0deg);
+    transition: 1s;
+    padding-left: 70px;
+    font-family: "Anta", sans-serif;
+}
+#circle h1{
+    font-weight: 300;
+}
+
+.feature img {
+    width: 70px;
+}
+
+.feature {
+    position: absolute;
+    display: flex;
+    color: black;
+}
+
+.feature div {
+    margin-left: 30px;
+}
+
+.feature div p {
+    margin-top: 8px;
+}
+
+.one {
+    top: 450px;
+    right: 50px;
+}
+
+.two {
+    top: 150px;
+    left: 350px;
+    transform: rotate(-90deg);
+}
+
+.three {
+    bottom: 450px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+
+.four {
+    bottom: 150px;
+    right: 350px;
+    transform: rotate(-270deg);
+}
+
+.mobile {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.controls {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.controls h3 {
+    margin: 15px 0;
+    color: black;
+    border: 2px solid black;
+    padding: 6.75px 13.5px;
+    border-radius: 8px;
+}
+
+#upBtn {
+    width: 15px;
+    cursor: pointer;
+    padding: 12px;
+}
+
+#downBtn {
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    padding: 12px;
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    border-top: 500px solid white;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid white;
+    border-left: 500px solid white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.ph-details{
+    position: absolute;
+    z-index: 1;
+    /* border: 2px solid blue; */
+    color: black;
+    /* height: 100px;
+    width: 300px; */
+    bottom: 1vh;
+    left: 7vw;
+}
+.ph-details h2{
+    margin: 10px;
+}
+
+.rate{
+    display: flex;
+    margin: 10px; 
+    margin-bottom: 10px;
+}
+
+.price{
+    display: flex;
+    margin: 10px; 
+    align-items: center;
+}
+.price img{
+    margin-right: 20px;
+}
+.price p{
+    font-size: 22px;
+}
+
+.add-buy{
+    display: flex;
+    /* margin: 10px;  */
+}
+
+.add-buy .add{
+    /* background-color: ; */
+    border: 2px solid blue;
+    border-radius: 5px;
+    /* margin: ; */
+    padding: 8px 30px;
+    align-items: center;
+    margin: 5px 10px;
+    cursor: pointer;
+    margin: 10px; 
+    font-size: 22px;
+}
+.add-buy .add:hover{
+    background-color: white;
+    color: black;
+}
+
+.add-buy .buy{
+    background-color: rgb(60, 60, 254);
+    /* border: 2px solid blue; */
+    border-radius: 5px;
+    /* margin: ; */
+    color: white;
+    padding: 8px 30px;
+    align-items: center;
+    margin: 5px 10px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 22px;
+}
+.add-buy .buy:hover{
+    background-color: blue;
+}
+
+.verify{
+    font-family: "Encode Sans SC", sans-serif;
+    font-weight: bold;
+    color: black;
+    z-index: 1;
+    position: absolute;
+    right: 7vw;
+    bottom: 7vh;
+    opacity: .6;
+    font-size: 1.2em;
+}
+
+.about-us{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.about-us h3{
+    font-family: "Play", sans-serif;
+    text-align: center;
+    margin: 2rem 0px;
+}
+
+.about-us ul {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    height: 21rem;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.about-us ul li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+.about-us ul li a .fa {
+    font-size: 40px;
+    color: #262626;
+    line-height: 80px;
+    transition: .5s;
+    padding-right: 14px;
+}
+
+.about-us ul li a span {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    color: #262626;
+    letter-spacing: 4px;
+    transition: .5s;
+}
+
+.about-us ul li a {
+    text-decoration: none;
+    display: absolute;
+    display: block;
+    width: 210px;
+    height: 80px;
+    background: #fff;
+    text-align: left;
+    padding-left: 20px;
+    transform: rotate(-30deg) skew(25deg) translate(0, 0);
+    transition: .5s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
+    /* border: 2px solid white;
+    border-radius: 20px; */
+}
+
+.about-us ul li a:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    transform: .5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+.about-us ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    transform: .5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+
+.about-us ul li a:hover {
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
+}
+
+.about-us ul li:hover .fa {
+    color: #fff;
+}
+
+.about-us ul li:hover span {
+    color: #fff;
+}
+
+.about-us ul li:hover:nth-child(1) a {
+    background: #3b5998;
+}
+
+.about-us ul li:hover:nth-child(1) a:before {
+    background: #365492;
+}
+
+.about-us ul li:hover:nth-child(1) a:after {
+    background: #4a69ad;
+}
+
+.about-us ul li:hover:nth-child(2) a {
+    background: #00aced;
+}
+
+.about-us ul li:hover:nth-child(2) a:before {
+    background: #097aa5;
+}
+
+.about-us ul li:hover:nth-child(2) a:after {
+    background: #53b9e0;
+}
+
+.about-us ul li:hover:nth-child(3) a {
+    background: #dd4b39;
+}
+
+.about-us ul li:hover:nth-child(3) a:before {
+    background: #b33a2b;
+}
+
+.about-us ul li:hover:nth-child(3) a:after {
+    background: #e66a5a;
+}
+
+.about-us ul li:hover:nth-child(4) a {
+    background: #e4405f;
+}
+
+.about-us ul li:hover:nth-child(4) a:before {
+    background: #d81c3f;
+}
+
+.about-us ul li:hover:nth-child(4) a:after {
+    background: #e46880;
+}

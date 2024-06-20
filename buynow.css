@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+/* for nav */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&display=swap');
+/* for verify */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+/* for contact-us */
+
+* {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+nav {
+    width: 100%;
+    position: static;
+    margin: auto auto;
+    padding: auto auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    /* border: 2px solid black; */
+    background: rgb(173, 217, 210);
+    font-size: 1.2rem;
+}
+
+.logo {
+    flex-basis: 20%;
+    margin: .7rem 2rem;
+}
+
+.logo img {
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 3rem;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul{
+    margin-right: 2rem;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1.2rem;
+    /* border: 2px solid red; */
+    font-size: larger;
+    font-weight: 400;
+    padding: 0px .5rem;
+    /* color: black; */
+    /* background-color: ; */
+}
+
+.nav-links ul li:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    /* border-top-right-radius: 21px; */
+    border-bottom-right-radius: 21px;
+    border-top-left-radius: 21px;
+    /* border-bottom-left-radius: 21px; */
+    transition: .3s;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links ul li a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.main{
+    border: 2px solid black;
+}
+.box{
+    border: 2px solid black;
+}
+.inner-box{
+    border: 2px solid black;
+}
+
+.ph-details{
+    display: inline-block;
+    color: black;
+    border: 2px solid black;
+}
+.ph-details h2{
+    margin: 10px;
+}
+
+.rate{
+    display: flex;
+    margin: 10px; 
+    margin-bottom: 10px;
+}
+
+.price{
+    display: flex;
+    margin: 10px; 
+    align-items: center;
+}
+.price img{
+    margin-right: 20px;
+}
+.price p{
+    font-size: 22px;
+}
